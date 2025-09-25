@@ -1,0 +1,35 @@
+<!-- <div class="container mx-auto p-4">
+  <h1 class="text-2xl font-bold mb-4">Stock Price Dashboard</h1>
+
+  <div class="bg-gray-100 p-4 rounded mb-4 shadow">
+    <p class="text-lg"><strong>Symbol:</strong> {{ currentStock.symbol }}</p>
+    <p class="text-lg"><strong>Price:</strong> {{ currentStock.price | number:'1.2-2' }}</p>
+    <p class="text-sm text-gray-600">
+      <strong>Last Updated:</strong> {{ currentStock.updatedAt | date:'mediumTime' }}
+    </p>
+  </div>
+
+  <a
+    routerLink="/chart"
+    class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+    >Go to Chart</a
+  >
+</div> -->
+
+
+
+<!-- index.html or component HTML -->
+
+
+
+<div class="container">
+  <div class="card">
+    <h1>Stock Price Dashboard</h1>
+    <div class="stock-info">
+      <p><strong>Name:</strong> {{ currentStock.symbol }}</p>
+      <p><strong>Price:</strong> {{ currentStock.price | number:'1.2-2' }}</p>
+      <p><strong>Last Updated:</strong> {{ currentStock.updatedAt | date:'mediumTime' }}</p>
+    </div>
+    <a routerLink="/chart" class="btn">View Chart</a>
+  </div>
+</div>
